@@ -1,6 +1,6 @@
 Name:           xz-java
 Version:        1.3
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        Java implementation of XZ data compression
 Group:          Development/Libraries
 BuildArch:      noarch
@@ -66,6 +66,9 @@ install -pm 644 build/maven/xz-%{version}.pom %{buildroot}/%{_mavenpomdir}/JPP-%
 %{_javadocdir}/%{name}
 
 %changelog
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1.3-3
+- Mass rebuild 2013-12-27
+
 * Fri Jun 28 2013 Mikolaj Izdebski <mizdebsk@redhat.com> - 1.3-2
 - Rebuild to regenerate API documentation
 - Resolves: CVE-2013-1571
